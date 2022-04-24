@@ -1,0 +1,17 @@
+/*
+LT01_EX07: Elabore um algoritmo que calcule e apresente o valor do salário família de um funcionário, que é de 2% do salário por dependente. O salário e o número de dependentes serão lidos do usuário.
+*/
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+   float salario, salario_fml, dependentes;
+   printf("Qual e o seu salario bruto? ");
+   scanf("%f", &salario);
+   printf("Quantos dependentes residem com voce? ");
+   scanf("%f", &dependentes);
+   salario_fml = salario*2/100*dependentes;
+   // Não entendi direito a equação pedida...
+   printf("Seu salario familia e de %.2f reais para %.0f dependentes.", salario_fml, dependentes);
+   
+   return 0;

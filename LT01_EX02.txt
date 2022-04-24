@@ -1,0 +1,14 @@
+/*
+LT01_EX02: Faça um algoritmo que peça o ano de nascimento do usuário e apresente sua provável idade.
+*/
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int ano;
+    printf("Em que ano voce nasceu? ");
+    scanf("%d", &ano);
+    ano = 2022-ano;
+    printf("Provavelmente voce tem %d anos de idade.", ano);
+    return 0;
+}

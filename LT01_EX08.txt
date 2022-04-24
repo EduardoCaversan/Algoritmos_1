@@ -1,0 +1,17 @@
+/*
+LT01_EX08: Elabore um algoritmo que calcule o preço de venda de um carro. O preço de venda é formado pelo preço da montadora, mais 15% de lucro, mais 11% de IPI, mais 17% de ICMS. As porcentagens são sobre o preço da montadora, que é lido do usuário. Apresente na tela o preço final e o valor dos impostos.
+*/
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    float veiculo, lucro, ipi, icms, total;
+    printf("Qual é o preço da montadora? ");
+    scanf("%f", &veiculo);
+    lucro = veiculo*15/100;
+    ipi = veiculo*11/100;
+    icms = veiculo*17/100;
+    total = veiculo+lucro+ipi+icms;
+    printf("O valor total é: %.2f\nO valor do lucro da montadora é: %.2f\nO valor do IPI é %.2f\nO valor do ICMS é: %.2f", total, lucro, ipi, icms);
+   return 0;
+}

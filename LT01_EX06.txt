@@ -1,0 +1,15 @@
+/*
+LT01_EX06: Elabore um algoritmo que leia o raio de uma circunferência, calcule e apresente sua área.
+*/
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+   float raio, area;
+   printf("Qual o raio da circunferencia? ");
+   scanf("%f", &raio);
+   area = raio*raio*3.14;
+   // Professor, fiz arredondando pi para 3,14!
+   printf("A area da circunferencia e: %.2f", area);
+   return 0;
+}

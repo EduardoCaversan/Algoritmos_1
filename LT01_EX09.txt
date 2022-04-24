@@ -1,0 +1,15 @@
+/*
+LT01_EX09: Elabore um algoritmo que leia um número inteiro representando a quantidade de alunos de uma turma. Apresente a quantidade de grupos de 4 alunos que podem ser formados, e quantos alunos ficam de fora, sem formar um grupo completo.
+*/
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int numero, grupos, alunos;
+    printf("Quantos alunos tem na sala? ");
+    scanf("%d", &numero);
+    grupos = numero/4;
+    alunos = numero-(grupos*4);
+    printf("O número de grupos a ser formado é: %d\nE o número de alunos que ficam de fora é: %d", grupos, alunos);
+   return 0;
+}

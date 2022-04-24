@@ -1,0 +1,14 @@
+/*
+LT01_EX04: Faça um algoritmo que peça uma temperatura em graus célsius e apresente seu respectivo valor em fahrenheit. O cálculo de conversão é: F = (9 * C / 5) + 32.
+*/
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+   float celsius, fahren;
+   printf("Qual e a temperatura atual em celsius? ");
+   scanf("%f", &celsius);
+   fahren = (9*celsius/5)+32;
+   printf("A temperatura em fahrenheit é %.2f", fahren);
+   return 0;
+}

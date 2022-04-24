@@ -1,0 +1,25 @@
+/*LT01_EX10: Elabore um algoritmo para calcular o salário final de um trabalhador, recebendo a quantidade de horas trabalhadas, a quantidade de horas extras, quantidade de horas ausentes e o valor do salário mínimo, sabendo que:
+a) as horas trabalhadas e ausentes valem 4% do salário mínimo;
+b) as horas extras valem 50% a mais do que as horas trabalhadas;
+c) o salário final é igual a soma das horas trabalhadas com as hora extras, descontadas as horas ausentes e 11% de INSS.*/
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+float salariomin, ht, ha, hex, inss, salariofim;
+printf("Digite seu salário: ");
+scanf("%f", &salariomin);
+printf("Quantidade de horas extras: ");
+scanf("%f", &hex);
+printf("Quantidade de horas trabalhadas: ");
+scanf("%f", &ht);
+printf("Quantidade de horas ausentes: ");
+scanf("%f", &ha);
+ht = salariomin*4/100;
+hex = salariomin*150/100;
+ha = salariomin*4/100;
+inss = salariomin*11/100;
+salariofim = ht+hex-ha-inss;
+printf("O salário final será: %.2f\n", salariofim);
+return 0;
+}
+//Professor, funcionou... Como? Não faço ideia, mas funcionou! Kkkkkkk
