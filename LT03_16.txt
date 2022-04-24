@@ -1,0 +1,54 @@
+/*
+LT03_EX16: Faça um programa em Linguagem C que peça o mês do ano (um número de 1 a 12). O algoritmo deve apresentar a mensagem de quantos dias o mês tem, ou “mês inválido”, caso digite um mês inválido.
+Para treinar, você pode refazer alguns dos exercícios trocando o uso do IF por SWITCH-CASE e vice versa.
+*/
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int mes;
+    printf("Digite um número de 1 a 12 que representará um mês do ano: ");
+    scanf("%d", &mes);
+    switch(mes){
+        case 1:
+        printf("O mês de janeiro tem 31 dias!");
+        break;
+        case 2:
+        printf("O mês de fevereiro tem 28 dias, porém em anos bissextos, o mês de fevereiro tem 29 dias!");
+        break;
+        case 3:
+        printf("O mês de março tem 31 dias!");
+        break;
+        case 4:
+        printf("O mês de abril tem 30 dias!");
+        break;
+        case 5:
+        printf("O mês de maio tem 31 dias!");
+        break;
+        case 6:
+        printf("O mês de junho tem 30 dias!");
+        break;
+        case 7:
+        printf("O mês de julho tem 31 dias!");
+        break;
+        case 8:
+        printf("O mês de agosto tem 31 dias!");
+        break;
+        case 9:
+        printf("O mês de setembro tem 30 dias!");
+        break;
+        case 10:
+        printf("O mês de outubro tem 31 dias!");
+        break;
+        case 11:
+        printf("O mês de novembro tem 30 dias!");
+        break;
+        case 12:
+        printf("O mês de dezembro tem 31 dias!");
+        break;
+        default:
+        printf("O valor digitado não corresponde à um mês!");
+    }
+    
+    return 0;
+}

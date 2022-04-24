@@ -1,0 +1,41 @@
+/*
+LT03_EX14b: Idem ao exercício LT03_EX14 mas agora deverá usar um switch-case.
+Faça um programa em Linguagem C que apresente um menu e pergunte ao usuário se ele deseja calcular:
+1) a área de um triângulo (base vezes altura dividido por 2)
+2) a área de um círculo (pi multiplicado pelo raio ao quadrado)
+3) a área de um cubo (6 vezes a área do quadrado)
+Depois, solicitar os dados necessários para calcular a área escolhida, e mostrar o resultado na tela.
+*/
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    float base, alt, ladocb, raio, resultadocb, resultadotri, resultadocirc;
+    int op;
+    printf("Escolha uma das opções abaixo.\n1) Calcular a área do triângulo.\n2) Calcular a área do círculo.\n3) Calcular a área do cubo.\nDigite o número da opção escolhida: ");
+    scanf("%d", &op);
+    switch(op){
+    case 1:
+        printf("Digite a base do triângulo: ");
+        scanf("%f", &base);
+        printf("Agora digite a altura do triângulo: ");
+        scanf("%f", &alt);
+        resultadotri = (base * alt) / 2;
+        printf("A área do triângulo é: %.2f", resultadotri);
+        break;
+    case 2:
+        printf("Digite o valor do raio do círculo: ");
+        scanf("%f", &raio);
+        resultadocirc = (raio * raio) * 3.14;
+        printf("A área do círculo é: %.2f", resultadocirc);
+        break;
+    case 3:
+        printf("Digite o valor do lado do cubo: ");
+        scanf("%f", &ladocb);
+        resultadocb = (ladocb * ladocb) * 6;
+        printf("A área do cubo é: %.2f", resultadocb);
+        break;
+    }
+    
+    return 0;
+}

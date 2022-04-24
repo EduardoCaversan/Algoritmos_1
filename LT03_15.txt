@@ -1,0 +1,24 @@
+/*
+LT03_EX15: Escreva um programa em linguagem C que leia o conceito anual de um aluno em uma disciplina e informe o desempenho dele. Se for um conceito inválido escreva uma mensagem informando o ocorrido. Exemplo: 'A' - Conhecimento Pleno, 'B' - Conhecimento Parcialmente Pleno, 'C' - Conhecimento Suficiente, 'D' - Conhecimento Insuficiente. '<Qualquer outro caracter>': Conceito Inválido.
+*** este exercícios deve ser feito 2x: LT03_EX15a usando apenas Ifs; LT02_EX15b usando switch case.
+*/
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    char conceito;
+    printf("Digite seu conceito anual: ");
+    scanf("%c", &conceito);
+    if(conceito == 'A' || conceito == 'a'){
+        printf("Você atingiu o nível de conhecimento pleno na matéria, portanto foi aprovado!");
+    } else if(conceito == 'B' || conceito == 'b'){
+        printf("Você atingiu o nível de conhecimento parcialmente pleno na matéria, portanto foi aprovado!");
+    } else if(conceito == 'C' || conceito == 'c'){
+        printf("Você atingiu o nível de conhecimento suficiente nessa matéria, portanto foi aprovado!");
+    } else if(conceito == 'D' || conceito == 'd'){
+        printf("Você atingiu o nível de conhecimento insuficiente nessa matéria, portanto foi reprovado!");
+    } else if(conceito != 'D' || conceito != 'd'){
+        printf("O conceito digitado é inválido!");
+    }
+    return 0;
+}

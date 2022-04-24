@@ -1,0 +1,30 @@
+/*
+LT03_EX05: Faça um programa em linguagem C que receba uma operação (caracter: + - * / ) e depois, 2 valores reais. Realize apenas a operação escolhida pelo usuário.
+*/
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    char op; 
+    float valor1, valor2, resultado1, resultado2, resultado3, resultado4;
+    printf("Escolha uma das operações:\n(+)\n(-)\n(*)\n(/): ");
+    scanf("%c", &op);
+    printf("Insira o primeiro valor: ");
+    scanf("%f", &valor1);
+    printf("Insira o segundo valor: ");
+    scanf("%f", &valor2);
+    resultado1 = valor1 + valor2;
+    resultado2 = valor1 - valor2;
+    resultado3 = valor1 * valor2;
+    resultado4 = valor1 / valor2;
+    if(op == '+'){
+        printf("O resultado é: %.2f", resultado1);
+    } else if(op == '-'){
+        printf("O resultado é: %.2f", resultado2);
+    } else if(op == '*'){
+        printf("O resultado é: %.2f", resultado3);
+    } else if(op == '/'){
+        printf("O resultado é: %.2f", resultado4);
+    }
+    return 0;
+}

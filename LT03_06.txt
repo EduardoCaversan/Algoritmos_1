@@ -1,0 +1,17 @@
+/*
+LT03_EX06: Você está jogando um bingo e só faltam as "pedras" 21 e 53. Faça um programa em linguagem C que receba 2 valores "cantados" do usuário, se os valores "cantados" forem os seus, diga BINGO!!! Ao final, ganhando ou não, de uma mensagem de fim da rodada.
+*/
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int pedra1, pedra2;
+    printf("Insira as últimas duas pedras separadas por espaço: ");
+    scanf("%d", &pedra1);
+    scanf("%d", &pedra2);
+    if(pedra1 == 21 && pedra2 == 53){
+        printf("BINGOOOOOO!!! VOCÊ FOI O GANHADOR DA RODADA!!! :)");
+    } else printf("Que pena, você não foi o ganhador da rodada! :(");
+    printf("\nFim da rodada!");
+    return 0;
+}

@@ -1,0 +1,18 @@
+/*
+LT03_EX03: Faça um programa em linguagem C que informe se um número é PAR.
+*/
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int num1;
+    printf("Insira um valor inteiro: ");
+    scanf("%d", &num1);
+    if(num1 % 2 > 0){
+        printf("O número inserido é ímpar!");
+    }
+    else{
+        printf("O número inserido é par!");
+    }
+    return 0;
+}

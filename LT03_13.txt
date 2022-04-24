@@ -1,0 +1,19 @@
+/*
+LT03_EX13: Em uma indústria de parafusos, um algoritmo determina se a produção está boa ou ruim. Uma produção é ruim quando o número de parafusos com defeito for maior do que 10% do total produzido. Faça um programa em linguagem C que peça o número total de parafusos produzidos e, em seguida, peça o número de parafusos com defeito. O programa, então, deve calcular o limite de peças com defeito permitidas (com base no total de peças produzidas e a porcentagem limite) e apresentar se a produção está boa ou ruim.
+*/
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    float paraf, parafd, prod;
+    printf("Insira a quantidade de parafusos produzida: ");
+    scanf("%f", &paraf);
+    printf("Agora insira a quantidade de parafusos com defeito: ");
+    scanf("%f", &parafd);
+    prod = paraf * 10/100;
+    if(prod > parafd){
+        printf("A produção deste mês foi boa!");
+    } else printf("A produção deste mês foi ruim!");
+    
+    return 0;
+}

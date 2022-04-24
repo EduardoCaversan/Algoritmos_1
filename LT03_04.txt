@@ -1,0 +1,17 @@
+/*
+LT03_EX04: Faça um programa em linguagem C que receba o valor do salário de um funcionário, se ele ganhar menos que 2 salários mínimos, acresça um bônus de 10% ao salário a receber.
+*/
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    float salario, salariomin, _2salariomin;
+    printf("Qual é o seu sálario? ");
+    scanf("%f", &salario);
+    salariomin = 1212.00*2;
+    _2salariomin = salario+(salario*10/100);
+    if(salario <= salariomin){
+        printf("Seu novo salário será: %.2f", _2salariomin);
+    } else printf("Seu salário é muito alto para a taxa!");
+    return 0;
+}

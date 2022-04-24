@@ -1,0 +1,21 @@
+/*
+LT03_EX09: Faça um programa em linguagem C que leia o gênero de uma pessoa (‘F’ para feminino ou ‘M’ para masculino - deve ser UM caractere em maiúsculo) e a sua idade . Se o usuário for do sexo Feminino, apresentar a mensagem “Olá senhora, você tem ??? anos.  “. Do contrário, apresentar a mensagem “Olá senhor, você tem ??? anos. “ Trocar ??? pela idade digitada pelo usuário.
+*/
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+
+int main() {
+    char sexo;
+    int idade;
+    printf("Digite seu sexo, com letra inicial e maiúscula: ");
+    scanf("%c", &sexo);
+    printf("Agora digite sua idade: ");
+    scanf("%d", &idade);
+    if(sexo == 'F'){
+        printf("Olá senhora, sua idade é %d!", idade);
+    } else{
+        printf("Olá senhor, sua idade é %d!", idade);
+    }
+    return 0;
+}

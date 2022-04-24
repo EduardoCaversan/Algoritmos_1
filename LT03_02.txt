@@ -1,0 +1,16 @@
+/*
+LT03_EX02: Faça um programa em linguagem C que informe se uma determinada pessoa é maior de idade.
+*/
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+  int idade;
+  printf("Qual é a sua idade? ");
+  scanf("%d", &idade);
+  if(idade >= 18){
+      printf("Você é maior de idade!");
+  } else printf("Você não é maior de idade!");
+
+  return 0;
+}
