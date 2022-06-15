@@ -1,0 +1,29 @@
+/* 
+LT04a_EX01: Faça um programa em Linguagem C que apresente os valores de 1 a 10.
+*/
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int val;
+    char resp;
+    printf("(S) = Sim\n(N) = Não\nQuer ver os valores de 1 a 10? ");
+    scanf("%c", &resp);
+    val = 0;
+    switch(resp){
+        case 'S':
+        do{
+            val = val + 1;
+            printf("%d ", val);
+        }
+        while(val < 10);
+        break;
+        case 'N':
+        printf("Ok!");
+        break;
+        default:
+        printf("Caractere inválido!");
+        break;
+    }
+    return 0;
+}
