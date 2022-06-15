@@ -1,0 +1,19 @@
+/* 
+LT04a_EX05: Faça um programa em Linguagem C que receba um número do usuário e apresente a tabuada desse número. Apresente os dados de forma alinhada.
+*/
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int resp, limite;
+    printf("Digite o número que você deseja ver a tabuada: ");
+    scanf("%d", &resp);
+    limite = resp*10;
+    for(int tab = resp; tab <= limite ; tab++){
+        if(tab % resp == 0){
+            printf("%d \n", tab);
+        }
+        
+    }
+    return 0;
+}

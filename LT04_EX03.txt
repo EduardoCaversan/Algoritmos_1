@@ -1,0 +1,26 @@
+/* 
+LT04a_EX03: Faça um programa em C que imprima todos os múltiplos de 3, entre 1 e 100.
+*/
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    char resp;
+    printf("Deseja ver os múltiplos de três entre 1 e 100?\n(S) = Sim\n(N) = Não\nResposta: ");
+    scanf("%c", &resp);
+    switch(resp){
+        case 'S':
+            for(int multi3=1 ; multi3<=100 ; multi3++){
+		    if(multi3 % 3 ==0){
+			    printf("%d ", multi3);
+		    }
+	} break;
+	    case 'N':
+	    printf("Ok!");
+	    break;
+	    default:
+	    printf("Resposta inválida!");
+	    break;
+    }
+    return 0;
+}

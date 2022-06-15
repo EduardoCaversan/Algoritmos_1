@@ -1,0 +1,202 @@
+/* 
+LT04a_EX06: Para cada um de 10 números fornecidos pelo usuário informar se este nº é par, ímpar, positivo ou negativo.
+*/
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+     int num1, resp1, num2, num3, num4, num5, num6, num7, num8, num9, num10, resp2, resp3, resp4, resp5, resp6, resp7, resp8, resp9, resp10;
+
+      printf ("Entre com um numero: ");
+      scanf ("%d", &num1);
+      printf ("Entre com um numero: ");
+      scanf ("%d", &num2);
+      printf ("Entre com um numero: ");
+      scanf ("%d", &num3);
+      printf ("Entre com um numero: ");
+      scanf ("%d", &num4);
+      printf ("Entre com um numero: ");
+      scanf ("%d", &num5);
+      printf ("Entre com um numero: ");
+      scanf ("%d", &num6);
+      printf ("Entre com um numero: ");
+      scanf ("%d", &num7);
+      printf ("Entre com um numero: ");
+      scanf ("%d", &num8);
+      printf ("Entre com um numero: ");
+      scanf ("%d", &num9);
+      printf ("Entre com um numero: ");
+      scanf ("%d", &num10);
+      resp1 = num1 % 2;
+      resp2 = num2 % 2;
+      resp3 = num3 % 2;
+      resp4 = num4 % 2;
+      resp5 = num5 % 2;
+      resp6 = num6 % 2;
+      resp7 = num7 % 2;
+      resp8 = num8 % 2;
+      resp9 = num9 % 2;
+      resp10 = num10 % 2;
+
+        if (num1 == 0)
+        {
+        printf ("O numero 0 é par\n");
+        } else if (resp1 == 0 && num1 > 0)
+            {
+            printf ("O numero %d é par e positivo\n", num1);
+            } else if (resp1 == 0 && num1 < 0)
+              {
+              printf ("O numero %d é par e negativo\n", num1);
+              } else if (resp1 == 1 && num1 > 0)
+                {
+                printf ("O numero %d é impar e positivo\n", num1);
+                } else
+                  {
+                  printf ("O numero %d é impar e negativo\n", num1);
+                  }
+         if (num2 == 0)
+        {
+        printf ("O numero 0 é par\n");
+        } else if (resp2 == 0 && num2 > 0)
+            {
+            printf ("O numero %d é par e positivo\n", num2);
+            } else if (resp2 == 0 && num2 < 0)
+              {
+              printf ("O numero %d é par e negativo\n", num2);
+              } else if (resp2 == 1 && num2 > 0)
+                {
+                printf ("O numero %d é impar e positivo\n", num2);
+                } else
+                  {
+                  printf ("O numero %d é impar e negativo\n", num2);
+                  }
+        if (num3 == 0)
+            {
+            printf ("O numero 0 é par \n");
+            } else if (resp3 == 0 && num3 > 0)
+            {
+            printf ("O numero %d é par e positivo\n", num3);
+            } else if (resp3 == 0 && num3 < 0)
+              {
+              printf ("O numero %d é par e negativo\n", num3);
+              } else if (resp3 == 1 && num3 > 0)
+                {
+                printf ("O numero %d é impar e positivo\n", num3);
+                } else
+                  {
+                  printf ("O numero %d é impar e negativo\n", num3);
+                  }
+    if (num4 == 0)
+        {
+        printf ("O numero 0 é par \n");
+        } else if (resp4 == 0 && num4 > 0)
+            {
+            printf ("O numero %d é par e positivo \n", num4);
+            } else if (resp4 == 0 && num4 < 0)
+              {
+              printf ("O numero %d é par e negativo \n", num4);
+              } else if (resp4 == 1 && num4 > 0)
+                {
+                printf ("O numero %d é impar e positivo \n", num4);
+                } else
+                  {
+                  printf ("O numero %d é impar e negativo \n", num4);
+                  }
+                  if (num5 == 0)
+        {
+        printf ("O numero 0 é par \n");
+        } else if (resp5 == 0 && num5 > 0)
+            {
+            printf ("O numero %d é par e positivo \n", num5);
+            } else if (resp5 == 0 && num5 < 0)
+              {
+              printf ("O numero %d é par e negativo \n", num5);
+              } else if (resp5 == 1 && num5 > 0)
+                {
+                printf ("O numero %d é impar e positivo \n", num5);
+                } else
+                  {
+                  printf ("O numero %d é impar e negativo \n", num5);
+                  }
+                  if (num6 == 0)
+        {
+        printf ("O numero 0 é par \n");
+        } else if (resp6 == 0 && num6 > 0)
+            {
+            printf ("O numero %d é par e positivo \n", num6);
+            } else if (resp6 == 0 && num6 < 0)
+              {
+              printf ("O numero %d é par e negativo \n", num6);
+              } else if (resp6 == 1 && num6 > 0)
+                {
+                printf ("O numero %d é impar e positivo \n", num6);
+                } else
+                  {
+                  printf ("O numero %d é impar e negativo \n", num6);
+                  }
+                  if (num7 == 0)
+        {
+        printf ("O numero 0 é par \n");
+        } else if (resp7 == 0 && num7 > 0)
+            {
+            printf ("O numero %d é par e positivo \n", num7);
+            } else if (resp7 == 0 && num7 < 0)
+              {
+              printf ("O numero %d é par e negativo \n", num7);
+              } else if (resp7 == 1 && num7 > 0)
+                {
+                printf ("O numero %d é impar e positivo \n", num7);
+                } else
+                  {
+                  printf ("O numero %d é impar e negativo \n", num7);
+                  }
+                  if (num8 == 0)
+        {
+        printf ("O numero 0 é par \n");
+        } else if (resp8 == 0 && num8 > 0)
+            {
+            printf ("O numero %d é par e positivo \n", num8);
+            } else if (resp8 == 0 && num8 < 0)
+              {
+              printf ("O numero %d é par e negativo \n", num8);
+              } else if (resp8 == 8 && num8 > 0)
+                {
+                printf ("O numero %d é impar e positivo \n", num8);
+                } else
+                  {
+                  printf ("O numero %d é impar e negativo \n", num8);
+                  }
+                  if (num9 == 0)
+        {
+        printf ("O numero 0 é par \n");
+        } else if (resp9 == 0 && num9 > 0)
+            {
+            printf ("O numero %d é par e positivo \n", num9);
+            } else if (resp9 == 0 && num9 < 0)
+              {
+              printf ("O numero %d é par e negativo \n", num9);
+              } else if (resp9 == 1 && num9 > 0)
+                {
+                printf ("O numero %d é impar e positivo \n", num9);
+                } else
+                  {
+                  printf ("O numero %d é impar e negativo \n", num9);
+                  }
+                  if (num10 == 0)
+        {
+        printf ("O numero 0 é par \n");
+        } else if (resp10 == 0 && num10 > 0)
+            {
+            printf ("O numero %d é par e positivo \n", num10);
+            } else if (resp10 == 0 && num10 < 0)
+              {
+              printf ("O numero %d é par e negativo \n", num10);
+              } else if (resp10 == 1 && num10 > 0)
+                {
+                printf ("O numero %d é impar e positivo \n", num10);
+                } else
+                  {
+                  printf ("O numero %d é impar e negativo \n", num10);
+                  }
+    return 0;
+}

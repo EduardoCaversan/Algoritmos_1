@@ -1,0 +1,15 @@
+/* 
+LT04a_EX04: Faça um programa em Linguagem C que receba um número do usuário e apresente a fase "Seja bem vindo", tantas vezes quanto for esse número. Uma frase por linha.
+*/
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int resp;
+    printf("Quantas vezes deseja ser bem vindo? ");
+    scanf("%d", &resp);
+    for(int num = 1; num <= resp ; num++){
+         printf("Olá, seja bem vindo!\n");
+       }
+    return 0;
+}
